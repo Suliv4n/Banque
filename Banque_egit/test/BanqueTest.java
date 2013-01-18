@@ -58,5 +58,38 @@ public class BanqueTest {
 		
 		assertSame("Ce n'est pas le client le plus riche",c2 ,b.clientLePlusRiche());
 	}
+	
+	
+	@Test
+	public void testclientAyantUnCompteDansLeRouge() {
+		
+		b = new Banque();
+		
+		c1 = new Client("Girardin", "Lucas");
+		c2 = new Client("Guidé", "Kevin");
+		c3 = new Client("Bochant", "Sulivan");
+		b.ajoutClient(c1);
+		b.ajoutClient(c2);
+		b.ajoutClient(c3);
+		
+		coGL1 = new Epargne(c1, 1, 20000, 10);
+		coGL2 = new Courant(c1, 1, 6000, -400);
+		c1.ajouterCompte(coGL1);
+		c1.ajouterCompte(coGL2);
+		
+		coGK1 = new Epargne(c2, 1, 100000, 20);
+		coGK2 = new Courant(c2, 1, 5800, -400);
+		c2.ajouterCompte(coGK1);
+		c2.ajouterCompte(coGK2);
+		
+		coBS1 = new Epargne(c3, 1, 50000, 5);
+		coBS2 = new Courant(c3, 1, -90, -100);
+		c3.ajouterCompte(coBS1);
+		c3.ajouterCompte(coBS2);
+		
+		
+		assertTrue("La liste des clients dans le rouge est fausse", b.clientAyantUnCompteDansLeRouge().contains(c3));
+		assertEquals("La liste des clients dans le rouge est fausse", 1, b.clientAyantUnCompteDansLeRouge().size());
+	}
 
 }
