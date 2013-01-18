@@ -6,6 +6,7 @@ import org.junit.Test;
 
 public class BanqueTest {
 
+	// coucou
 	Banque b;
 	Client c1, c2, c3;
 	Compte coGK1, coGK2, coGL1, coGL2, coBS1, coBS2;
