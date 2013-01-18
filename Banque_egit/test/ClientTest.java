@@ -12,7 +12,11 @@ public class ClientTest {
 
 	@Test
 	public void testConstructeur() {
+		//Client(String nom, String prenom)
 		
+		Client c = new Client("LePAnda", "Marie");
+		
+		assertNotNull("Constructeur invalide", c);
 	}
 
 }
