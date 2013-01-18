@@ -10,6 +10,7 @@ public class TestCompte {
 	private Courant compteCourant;
 	private Epargne compteEpargne;
 	
+	
 	@Before
 	public void setUp()
 	{
