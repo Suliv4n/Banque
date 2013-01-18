@@ -29,7 +29,7 @@ public abstract class Compte
 	}
 
 
-	public double solde()
+	public double getSolde()
 	{
 		return solde;
 	}

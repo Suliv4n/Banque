@@ -9,7 +9,7 @@ public class Epargne extends Compte
 	}
 
 	@Override
-	public double solde()
+	public double getSolde()
 	{
 		return solde*(tauxInteret/100+1);
 	}

@@ -16,7 +16,7 @@ public class Client {
 	public double solde(){
 		double solde = 0;
 		for (Compte c : lesComptes){
-			solde += c.solde();
+			solde += c.getSolde();
 		}
 		
 		return solde;
@@ -25,5 +25,11 @@ public class Client {
 	public void ajouterCompte(Compte unCompte){
 		lesComptes.add(unCompte);
 	}
+
+	public ArrayList<Compte> getLesComptes() {
+		return lesComptes;
+	}
+	
+	
 }
 
