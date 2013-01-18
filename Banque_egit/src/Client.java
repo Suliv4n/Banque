@@ -12,6 +12,13 @@ public class Client {
 		this.prenom = prenom;
 	}
 	
-	
+	public double solde(){
+		double solde = 0;
+		for (Compte c : lesComptes){
+			solde += c.solde();
+		}
+		
+		return solde;
+	}
 }
 
