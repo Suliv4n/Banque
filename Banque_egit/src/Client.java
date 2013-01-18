@@ -10,6 +10,7 @@ public class Client {
 	public Client(String nom, String prenom){
 		this.nom = nom;
 		this.prenom = prenom;
+		lesComptes = new ArrayList <Compte>();
 	}
 	
 	public double solde(){
@@ -19,6 +20,10 @@ public class Client {
 		}
 		
 		return solde;
+	}
+	
+	public void ajouterCompte(Compte unCompte){
+		lesComptes.add(unCompte);
 	}
 }
 
