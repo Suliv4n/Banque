@@ -29,6 +29,7 @@ public class TestCompte {
 	@Test
 	public void testTransfert()
 	{
+		
 		assertTrue("Transfert mal effectué",compteCourant.transfert(2000, compteEpargne) && 
 				compteCourant.getSolde()== 2000 && compteEpargne.getSolde() == 10400);
 		assertTrue("Transfert ne devrait pas s'effectué",!compteCourant.transfert(100000, compteEpargne) && 
