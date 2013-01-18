@@ -8,6 +8,12 @@ public class Banque {
 	
 	
 	
+	public Banque() {
+	
+		lesClients = new ArrayList<Client>();
+	}
+	
+	
 	public Client clientLePlusRiche()
 	{
 		Client clientPlusRiche = lesClients.get(0);
@@ -40,9 +46,9 @@ public class Banque {
 	}
 	
 	
-	public void ajoutClient(String unNom, String unPrenom)
+	public void ajoutClient(Client unClient)
 	{
-		lesClients.add(new Client(unNom, unPrenom));
+		lesClients.add(unClient);
 	}
 	
 }
