@@ -23,9 +23,8 @@ public abstract class Compte
 		{
 			solde -= montant;
 			return true;
-		}	
+		}
 		return false;
-
 	}
 
 
