@@ -4,7 +4,7 @@ import java.util.ArrayList;
  * Classe repéresentant une banque.
  * Une banque possède des clients.
  * 
- * @author Kevin
+ * @author Kevin Guidé
  * @version 1.0
  */
 public class Banque 
