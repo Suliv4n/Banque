@@ -1,6 +1,11 @@
 /**
  * Classe abstraite représentant un compte.
- * 
+ * Un compte possède :
+ * <ul>
+ * <li> Un client </li>
+ * <li> Un numéro </li>
+ * <li> Un solde </li>
+ * </ul>
  * @author Sulivan Bochant
  * @version 1.0
  * 

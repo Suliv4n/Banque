@@ -47,7 +47,8 @@ public class Banque
 	 * Retourne sous forme d'ArrayList les clients dont le compte est dans 
 	 * le rouge.
 	 * 
-	 * @return
+	 * @return sous forme d'ArrayList les clients dont le compte est dans 
+	 * le rouge.
 	 */
 	public ArrayList<Client> clientAyantUnCompteDansLeRouge()
 	{
