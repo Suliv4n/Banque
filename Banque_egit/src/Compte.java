@@ -1,7 +1,11 @@
 /**
+ * Classe abstraite représentant un compte.
  * 
- * @author Sulivan Brochant
- *
+ * @author Sulivan Bochant
+ * @version 1.0
+ * 
+ * @see Courant
+ * @see Epargne
  */
 public abstract class Compte
 {
@@ -13,8 +17,11 @@ public abstract class Compte
 	 * Permet de créer un compte
 	 * 
 	 * @param client
+	 * 		Le client possesseur du compte.
 	 * @param numero
+	 * 		Numéro du compte.
 	 * @param solde
+	 * 		Solde du compte.
 	 */
 	public Compte(Client client, int numero, double solde)
 	{
@@ -27,6 +34,7 @@ public abstract class Compte
 	 * Permet de créditer un compter.
 	 * 
 	 * @param montant
+	 *		Montant à créditer.
 	 */
 	public void crediter(double montant)
 	{
@@ -34,9 +42,10 @@ public abstract class Compte
 	}
 
 	/**
-	 * Permet de débiter un compte.
+	 * Permet de débiter un compte si le solde du compte reste positif..
 	 * 
 	 * @param montant
+	 * 		Montant à débiter.
 	 * @return True si l'opération est réalisable (montant < solde), sinon False.
 	 */
 	public boolean debiter(double montant)

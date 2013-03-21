@@ -21,7 +21,8 @@ public class Client {
 
 	/**
 	 * 
-	 * @param nom Nom du client
+	 * @param nom 
+	 * 	Nom du client
 	 */
 	public void setNom(String nom) {
 		this.nom = nom;
